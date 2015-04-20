@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
   namespace :api, path: nil, defaults: {format: 'json'} do
     resources :victims
     resources :admins do

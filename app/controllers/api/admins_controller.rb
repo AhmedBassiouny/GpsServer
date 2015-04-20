@@ -1,6 +1,5 @@
 class Api::AdminsController < Api::ApiController
 	skip_before_filter  :verify_authenticity_token
-
 	def create
 		if Admin.exists?(:name => params[:name])
 			a = Admin.find_by_name(params[:name])
