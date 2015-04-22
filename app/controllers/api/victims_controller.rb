@@ -1,4 +1,4 @@
-class Api::PassengersController < Api::ApiController
+class Api::VictimsController < Api::ApiController
 	skip_before_filter  :verify_authenticity_token
 
 	def create
@@ -21,6 +21,10 @@ class Api::PassengersController < Api::ApiController
 
 	def show
 		@victims = Victim.find_by_id(params[:id])
+	end
+
+	def index
+		@victims = Victim.all
 	end
 
 end

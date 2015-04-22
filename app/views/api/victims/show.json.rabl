@@ -1,3 +1,3 @@
 object @victim
 
-attributes :id, :name, :lastloc
+attributes :name
