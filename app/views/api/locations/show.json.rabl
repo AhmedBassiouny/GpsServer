@@ -1,0 +1,3 @@
+object @location
+
+attributes :latlng

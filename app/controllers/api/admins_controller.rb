@@ -28,8 +28,7 @@ class Api::AdminsController < Api::ApiController
 			if a.level < 2
 				if Victim.exists?(:name => params[:vname])
 					v = Victim.find_by_name(params[:vname])
-					@locHistory = v.locations
-					respond_with @locHistory
+					@locations = v.locations
 				end
 			end
 		end

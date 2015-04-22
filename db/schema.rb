@@ -31,10 +31,7 @@ ActiveRecord::Schema.define(version: 20150402154718) do
   create_table "victims", force: true do |t|
     t.string   "name"
     t.integer  "active"
-<<<<<<< HEAD
     t.string   "lastloc"
-=======
->>>>>>> 01402f2d3e4f265070aca2542dddb1670042bd2e
     t.datetime "created_at"
     t.datetime "updated_at"
   end
